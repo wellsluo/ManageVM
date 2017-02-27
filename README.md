@@ -5,12 +5,12 @@ PowerShell script to manage Hyper-V Virtual Machines based on JSON configuration
 
 ##Motivation
 
-When I was preparing a demo lab with 10 virtual machines running in 20+ physical Hyper-V physical machines each, I need to create new virtual machines with same configuration, export, import to other hosts. I felt very boring to do it by clicking mouse button in Hyper-V console. So UI is not good way to do this job.  Automation is definitely the way to manage the virtual machines in large scale.  
+When I was preparing a demo lab with 10 virtual machines running in 20+ Hyper-V physical machines each, I create new virtual machines with same configuration in one physical machine first, then export, import them to other hosts. I felt very boring to do it by clicking mouse button with Hyper-V console. So UI is not good way to do this job.  Automation is definitely the way to manage the virtual machines in large scale.  
 
 
 ##Objectives
 
-Using script to create, export, import or remove multiple virtual machines with same configuration, administrator only needs to setup the configuration file, and then run the script. 
+Using script to create, export, import or remove multiple virtual machines with same configuration, administrator only needs to setup the configuration file, and then run the script.  And edit existed virtual machines to align the configuration is also necessary.
 
 #License
 
@@ -63,10 +63,25 @@ PowerShell console administrative mode checking.
 You can run the script on following OS versions and PowerShell version:
 - Windows Server 2016
 - Windows 10
-- PowerShell 4 or above 
+- PowerShell 4 or above with elevated mode console
 
 ##Usage
 Put the script and all other files under a folder. Run PowerShell command window in "Elevated" mode. Then go to the folder to run it. 
+
+Please refer following table for file list:
+
+File Name | Description | Memo
+------------ | ------------- | ------------
+Manage-VM.ps1 | Main script | 
+DeployVHD.ps1 | Dependency  | Set the un-attend settings to OS disk.
+Example.Manage-VM.ps1 | Example script  | Use Manage-VM.ps1 to create multiple VMs.
+Example.Manage-VM.Settings.Client.JSON | Example configuration file  | VM configuration for client.
+Example.Manage-VM.Settings.DomainController.JSON | Example configuration file  | VM configuration for Domain Controller.
+Example.Manage-VM.Settings.S2D.JSON |  Example configuration file  |  VM configuration for storage.
+Example.Manage-VM.Settings.SDN.JSON |  Example configuration file  | VM configuration for network.
+unattend_amd64_Client.xml | Un-attend file template. | For Windows Server.
+unattend_amd64_Server.xml | Un-attend file template. | For Windows Client.
+
 
 ###EXAMPLE
 
