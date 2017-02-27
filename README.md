@@ -5,7 +5,7 @@ PowerShell script to manage Hyper-V Virtual Machines based on JSON configuration
 
 ##Motivation
 
-When I was preparing a demo lab with 10 virtual machines in 20+ physical Hyper-V physical machines, I need to create new virtual machines with same configuration, export, import to other hosts. I felt very boring to do it by clicking mouse button in Hyper-V console. So UI is not good way to do this job.  Automation is definitely the way to manage the virtual machines in large scale.  
+When I was preparing a demo lab with 10 virtual machines running in 20+ physical Hyper-V physical machines each, I need to create new virtual machines with same configuration, export, import to other hosts. I felt very boring to do it by clicking mouse button in Hyper-V console. So UI is not good way to do this job.  Automation is definitely the way to manage the virtual machines in large scale.  
 
 
 ##Objectives
@@ -14,7 +14,7 @@ Using script to create, export, import or remove multiple virtual machines with 
 
 #License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/wellsluo/ManageVM/blob/master/LICENSE) file for details.
 
 ##Features
 
