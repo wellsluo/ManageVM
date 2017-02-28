@@ -1,0 +1,33 @@
+{
+    "VM_TYPE":                      1,                  
+    "VM_TYPE_HOST_PATH":            "V:\\hostVM",       
+    "VM_TYPE_VM_PATH":              "V:\\VM",           
+    "VM_PROJECT_NAME":              "Contoso", 
+    "VM_OS_DISK_TEMPLATE":          "D:\\VM\\BaseVHD\\WINDOWS_SERVER_2016_VOL_X64FRE_EN-US.100GB.GPT.VHDX",
+    "VM_NUMBER":                    2,                  
+    "VM_NAME_PREFIX":               "CT-DC",           
+    "VM_GENERATION":                2, 
+    "VM_POWER_ON":                  0,                 
+    "VM_NETWORK":      
+                    {
+                    "SWITCH":           "Internal-Switch",
+                    "ADAPTER_NUMBER":   1
+                    } ,    
+    "VM_HARDWARE":  
+                    {
+                        "PROCESSOR_CORE": 2, 
+                        "MEMORY": {
+                                        "DYNAMIC":  0,
+                                        "MAXIMUM":  "4GB",
+                                        "MINIMUM":  "1GB",
+                                        "STARTUP":  "2GB"
+                                  }, 
+                        "DATA_DISK":   {
+                                        "NUMBER": 1,
+                                        "SIZE":   "100GB",
+                                        "TYPE":   0   
+                                    },
+                        "DVD_DRIVE":    1,
+                        "DVD_IMAGE":    ""                        
+                      }
+}
