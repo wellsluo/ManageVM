@@ -36,7 +36,7 @@
 #
 #
 #
-# SCRIPT_VERSION: 1.0.100.Main.20170228.0228.0
+# SCRIPT_VERSION: 1.2.120.Main.20190715.1800.0.RC
 #
 #
 # 
@@ -189,7 +189,7 @@ Param(
 
 
 #declare constants
-Set-Variable -Name SCRIPT_VERSION -Value "1.0.100.Main.20170228.0228.0" -Option Constant
+Set-Variable -Name SCRIPT_VERSION -Value "1.2.120.Main.20190715.1800.0.RC" -Option Constant
 Set-Variable -Name SCRIPT_NAME -Value $MyInvocation.MyCommand  -Option Constant
 
 
