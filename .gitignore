@@ -1,0 +1,11 @@
+# No LogFiles folder will be uploaded.
+LogFiles/
+
+# No Examples folder will be uploaded.
+Examples/
+
+# No file with prefix Example- will be uploaded
+Example-*.JSON
+
+# No local status file will be uploaded
+*.Local.Status.JSON
